@@ -8,13 +8,16 @@ Add this line to your application's Gemfile:
 
     gem 'stasis-compass'
 
+You may remove:
+
+    gem 'compass'
+    gem 'stasis'
+
+Because they will be automatically included in your bundle.
+
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install stasis-compass
 
 ## Usage
 
