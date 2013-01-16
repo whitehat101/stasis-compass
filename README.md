@@ -1,10 +1,10 @@
-# StasisCompass
+# Stasis-Compass
 
-TODO: Write a gem description
+Configures Stasis (with SCSS/SASS) to load compass mixins.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your stasis project's Gemfile:
 
     gem 'stasis-compass'
 
@@ -13,15 +13,35 @@ You may remove:
     gem 'compass'
     gem 'stasis'
 
-Because they will be automatically included in your bundle.
+Because they will be automatically included in your bundle, or you may keep them in your gemfile to pull a specific version of compass / stasis. This should work with any compass >= 0.10.1 and stasis >= 0.1.9.
 
 And then execute:
 
-    $ bundle
+    $ bundle exec stasis
+
+as usual to compile your project.
 
 ## Usage
 
-TODO: Write usage instructions here
+In a SCSS or SASS file, import and include mixins:
+
+```scss
+// style.css.scss
+@import "compass/css3/opacity";
+
+div {
+  @include opacity(0.5);
+}
+```
+```sass
+// style.css.sass
+@import "compass/css3/opacity"
+
+div
+  @include opacity(0.5)
+```
+
+See the [Compass Reference](http://compass-style.org/reference/compass/) for more information.
 
 ## Contributing
 
