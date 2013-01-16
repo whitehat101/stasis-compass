@@ -1,4 +1,4 @@
-# Stasis::Compass
+# StasisCompass
 
 TODO: Write a gem description
 

@@ -5,7 +5,7 @@ require 'stasis-compass/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "stasis-compass"
-  gem.version       = Stasis::Compass::VERSION
+  gem.version       = StasisCompass::VERSION
   gem.authors       = ["Jeremy Ebler"]
   gem.email         = ["jebler@gmail.com"]
   gem.description   = %q{Configure Stass for Compass}
