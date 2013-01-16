@@ -3,7 +3,9 @@ require 'compass'
 require 'stasis'
 
 module StasisCompass
-  puts "Stasis::Compass -- Compass.sass_engine_options:"
-  puts Compass.sass_engine_options.to_yaml
+  if ENV['VERBOSE']
+    puts "StasisCompass -- Compass.sass_engine_options:"
+    puts Compass.sass_engine_options.to_yaml
+  end
   ::Stasis::Options.set_template_option 'scss', ::Compass.sass_engine_options
 end
