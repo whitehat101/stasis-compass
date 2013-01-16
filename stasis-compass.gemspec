@@ -18,5 +18,5 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
 
   gem.add_dependency 'stasis', '>= 0.1.9'
-  gem.add_dependency 'compass', '~> 0.12.2'
+  gem.add_dependency 'compass', '>= 0.10.1'
 end
