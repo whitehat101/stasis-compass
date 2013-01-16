@@ -15,6 +15,8 @@ You may remove:
 
 Because they will be automatically included in your bundle, or you may keep them in your gemfile to pull a specific version of compass / stasis. This should work with any compass >= 0.10.1 and stasis >= 0.1.9.
 
+Depending on your project's setup, you may need to `require 'stasis-compass'` in your top level stasis `controller.rb`.
+
 And then execute:
 
     $ bundle exec stasis
