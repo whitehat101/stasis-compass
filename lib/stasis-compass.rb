@@ -8,4 +8,5 @@ module StasisCompass
     puts Compass.sass_engine_options.to_yaml
   end
   ::Stasis::Options.set_template_option 'scss', ::Compass.sass_engine_options
+  ::Stasis::Options.set_template_option 'sass', ::Compass.sass_engine_options
 end
